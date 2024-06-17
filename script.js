@@ -11,13 +11,6 @@ function calculateLeasingDetails() {
     const downPaymentPercent = parseFloat(document.getElementById('down-payment').value);
     const carType = document.getElementById('car-type').value;
 
-    if (isNaN(carValue) || carValue < 10000 || carValue > 200000 || isNaN(downPaymentPercent) || downPaymentPercent < 10 || downPaymentPercent > 50) {
-        alert('Please enter valid numbers.');
-        document.getElementById('car-value').value = 10000 ? carValue < 10000 || isNaN(carValue) : document.getElementById('car-value').value = 200000;
-        document.getElementById('down-payment').value = 10 ? downPayment < 10 || isNaN(downPaymentPercent) : document.getElementById('down-payment').value = 50;
-        return;
-    }
-
     const downPayment = carValue * (downPaymentPercent / 100);
     const financedAmount = carValue - downPayment;
     
