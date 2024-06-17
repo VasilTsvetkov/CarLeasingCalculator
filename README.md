@@ -17,3 +17,6 @@
 
 ### Styling
 - CSS was used to style the calculator, ensuring a clean and modern appearance. The styling is responsive, adapting to different screen sizes to enhance usability.
+
+### Enhancements
+- Enhanced the user interface by introducing the capability to adjust the slider value in single-step increments via the left and right arrow keys. This feature ensures accurate adjustments to the car value and down payment fields, thereby minimizing the risk of submitting incorrect data.
